@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-8">
+      <button
+      type="button"
+      class="btn btn-success"
+      (click)= "onStartWorkDay()">Start Work Day</button>
+      <button
+      type="button"
+      class="btn btn-danger"
+      (click)="onEndWorkDay()">End Work Day</button>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <hr>
+      <h1> Orders </h1>
+      <hr>
+      <app-first-five-orders [getOrders]="orders"></app-first-five-orders>
+      <hr>
+      <app-all-other-orders [getOrders]="orders"></app-all-other-orders>
+      <hr>
+      <app-lottery-winning-order [getOrders]="orders"></app-lottery-winning-order>
+    </div>
+  </div>
+</div>

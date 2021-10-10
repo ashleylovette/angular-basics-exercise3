@@ -1,0 +1,9 @@
+<div style="background-color: goldenrod;">
+  CONGRATULATIONS! YOU WON THE LOTTERY!
+<div
+*ngFor="let order of orders; let i = index">
+<span *ngIf="i % 7 ==0 && i!= 0">
+  <p>{{ order }}</p>
+</span>
+</div>
+</div>

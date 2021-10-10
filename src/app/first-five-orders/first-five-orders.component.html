@@ -1,0 +1,6 @@
+<div class="container">
+  <h3>First Five Orders</h3>
+  <span *ngFor="let order of orders; let i = index">
+    <p *ngIf="i < 5">{{order}}</p>
+  </span>
+</div>
